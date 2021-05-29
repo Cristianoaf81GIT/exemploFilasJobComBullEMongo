@@ -1,0 +1,7 @@
+volumes/*.*
+./volumes
+volumes
+.env
+node_modules
+.vscode
+node_modules

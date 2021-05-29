@@ -1,0 +1,25 @@
+{
+  "name": "accesscounter",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "bull": "^3.22.6",
+    "dotenv-safe": "^8.2.0",
+    "esm": "^3.2.25",
+    "express": "^4.17.1",
+    "ioredis": "^4.27.3",
+    "mongoose": "^5.12.12"
+  },
+  "scripts": {
+    "start": "nodemon -r dotenv-safe/config -r esm ./src/server.js",
+    "docker:dev": "docker-compose -f docker-compose.yml up"
+  },
+  "devDependencies": {
+    "eslint": "^7.27.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "nodemon": "^2.0.7",
+    "prettier": "^2.3.0"
+  }
+}
